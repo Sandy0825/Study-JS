@@ -11,6 +11,8 @@ function solution(participant, completion) {
     completion.sort();
 
     for(var i=0;i<len;i++){
+        //순서배열된 참여자와 완주자를 비교해 같지 않으면 결과에 입력
+        //한명의 선수만 완주를 못했기 때문에 비교가능
         if(participant[i]!==completion[i]){
             answer=participant[i];
             break;
